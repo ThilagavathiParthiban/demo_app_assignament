@@ -1,0 +1,19 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "Deploying demo app using Githubaction to ECS and creating and managing infrastructure through terraform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThilagavathiParthiban/demo_app_assignament.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThilagavathiParthiban/demo_app_assignament/issues"
+  },
+  "homepage": "https://github.com/ThilagavathiParthiban/demo_app_assignament#readme"
+}
