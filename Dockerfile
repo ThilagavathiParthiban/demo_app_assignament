@@ -1,7 +1,7 @@
 FROM node:14
 WORKDIR /demoapp
 RUN ls -la 
-COPY /package*.json ./
+COPY package.json ./
 RUN ls -la
 RUN npm install
 COPY . .
