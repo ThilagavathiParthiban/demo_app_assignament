@@ -1,6 +1,5 @@
 FROM node:14
-WORKDIR /demoapp
-RUN ls -la 
+WORKDIR /app 
 COPY package.json ./
 RUN ls -la
 RUN npm install
