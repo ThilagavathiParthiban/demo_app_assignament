@@ -4,7 +4,7 @@
   "description": "Deploying demo app using Githubaction to ECS and creating and managing infrastructure through terraform",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ThilagavathiParthiban/demo_app_assignament/issues"
   },
-  "homepage": "https://github.com/ThilagavathiParthiban/demo_app_assignament#readme"
+  "homepage": "https://github.com/ThilagavathiParthiban/demo_app_assignament#readme",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "node_practice": "^1.0.0"
+  }
 }
