@@ -1,59 +1,27 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:676337714305:task-definition/app:5",
-    "containerDefinitions": [
-        {
-            "name": "demoapp",
-            "image": "676337714305.dkr.ecr.ap-south-1.amazonaws.com/demoapp_repo:latest",
-            "cpu": 256,
-            "memory": 512,
-            "portMappings": [
-                {
-                    "containerPort": 3000,
-                    "hostPort": 3000,
-                    "protocol": "tcp"
-                }
-            ],
-            "essential": true,
-            "environment": [],
-            "mountPoints": [],
-            "volumesFrom": []
-        }
-    ],
-    "family": "app",
-    "taskRoleArn": "arn:aws:iam::676337714305:role/ecs_task_definition_role",
-    "executionRoleArn": "arn:aws:iam::676337714305:role/ecs_task_definition_role",
-    "networkMode": "awsvpc",
-    "revision": 5,
-    "volumes": [],
-    "status": "ACTIVE",
-    "requiresAttributes": [
-        {
-            "name": "com.amazonaws.ecs.capability.ecr-auth"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.task-iam-role"
-        },
-        {
-            "name": "ecs.capability.execution-role-ecr-pull"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-        },
-        {
-            "name": "ecs.capability.task-eni"
-        }
-    ],
-    "placementConstraints": [],
-    "compatibilities": [
-        "EC2",
-        "FARGATE"
-    ],
-    "requiresCompatibilities": [
-        "FARGATE"
-    ],
-    "cpu": "256",
-    "memory": "512",
-    "registeredAt": "2023-03-30T15:10:12.071Z",
-    "registeredBy": "arn:aws:iam::676337714305:user/terraform",
-    "tags": []
+  "requiresCompatibilities": [
+      "FARGATE"
+  ],
+  "family": "app",
+  "containerDefinitions": [
+      {
+          "name": "demoapp",
+          "image": "676337714305.dkr.ecr.ap-south-1.amazonaws.com/demoapp_repo:latest",
+          "essential": true,
+          "cpu": "256",
+          "memory":"512",
+          "portMappings": [
+            {
+              "containerPort": 3000,
+              "hostPort"     : 3000
+            }
+          ]
+
+      }
+  ],
+  "volumes": [],
+  "networkMode": "awsvpc",
+  "memory": "256",
+  "cpu": "512",
+  "executionRoleArn": "arn:aws:iam::600023384173:role/ecsTaskExecutionRole"
 }
