@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:676337714305:task-definition/app",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:676337714305:task-definition/app:5",
     "containerDefinitions": [
         {
             "name": "demoapp",
-            "image": "676337714305.dkr.ecr.ap-south-1.amazonaws.com/demoapp_repo",
+            "image": "676337714305.dkr.ecr.ap-south-1.amazonaws.com/demoapp_repo:latest",
             "cpu": 256,
             "memory": 512,
             "portMappings": [
@@ -23,7 +23,7 @@
     "taskRoleArn": "arn:aws:iam::676337714305:role/ecs_task_definition_role",
     "executionRoleArn": "arn:aws:iam::676337714305:role/ecs_task_definition_role",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 5,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -53,8 +53,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2023-03-25T18:41:29.263Z",
+    "registeredAt": "2023-03-30T15:10:12.071Z",
     "registeredBy": "arn:aws:iam::676337714305:user/terraform",
     "tags": []
 }
-
