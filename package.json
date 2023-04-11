@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ThilagavathiParthiban/demo_app_assignament#readme",
   "dependencies": {
+    "express": "^4.18.2",
     "http": "^0.0.1-security",
     "node_practice": "^1.0.0"
   }
